@@ -7,6 +7,7 @@ import org.bouncycastle.crypto.prng.RandomGenerator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -89,7 +90,8 @@ public class Topic_02_Exercise {
 
 	@BeforeMethod
 	public void setUp() {
-		driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "./lib/chromedriver");
+		driver = new ChromeDriver();
 		driver.get("http://live.guru99.com");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
