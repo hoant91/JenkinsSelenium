@@ -1,0 +1,1 @@
+java -cp E:\SeleniumTraining\JenkinsSelenium\lib\*;E:\SeleniumTraining\JenkinsSelenium\bin org.testng.TestNG testng.xml

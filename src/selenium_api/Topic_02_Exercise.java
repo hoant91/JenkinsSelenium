@@ -57,7 +57,7 @@ public class Topic_02_Exercise {
 	
 	@Test(testName = "Test Script 04: Login with Password incorrect")
 	public void TC04_LoginWithIncorrectPassword() {
-		String expectedMessage = "Please enter 6 or more characters without leading or trailing spaces.";
+		String expectedMessage = "Please enter 3 or more characters without leading or trailing spaces.";
 		driver.findElement(By.xpath("//div[@class = 'footer-container']//a[text() = 'My Account']")).click();
 		driver.findElement(By.id("email")).sendKeys("automation@gmail.com");
 		driver.findElement(By.id("pass")).sendKeys("123");
@@ -66,36 +66,36 @@ public class Topic_02_Exercise {
 		Assert.assertEquals(errMessage, expectedMessage);	
 	}
 	
-	@Test(testName = "Test Script 05: Create an account", alwaysRun = true)
-	public void TC05_CreateAnAccount() {
-		Random randomGenerator = new Random();  
-		int randomInt = randomGenerator.nextInt(1000);  
-		String email =   "username"+ randomInt +"@yopmail.com";
-		String expectedMessage = "Thank you for registering with Main Website Store.";
-		driver.findElement(By.xpath("//div[@class = 'footer-container']//a[text() = 'My Account']")).click();
-		driver.findElement(By.xpath("//*[@id='login-form']//a[@title = 'Create an Account']")).click();
-		driver.findElement(By.id("firstname")).sendKeys("user");
-		driver.findElement(By.id("lastname")).sendKeys("name");
-		driver.findElement(By.id("email_address")).sendKeys(email);
-		driver.findElement(By.id("password")).sendKeys("123456");
-		driver.findElement(By.id("confirmation")).sendKeys("123456");
-		driver.findElement(By.xpath("//button[@title='Register']")).click();
-		String successMessage = driver.findElement(By.className("success-msg")).getText();
-		Assert.assertEquals(successMessage, expectedMessage);
-		driver.findElement(By.xpath("//*[@id = 'header']//span[text() = 'Account']")).click();
-		driver.findElement(By.xpath("//a[@title='Log Out']")).click();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-/*		String homePageTitle = driver.getTitle();
-		Assert.assertEquals(homePageTitle, "Magento Commerce");*/
-	}
+//	@Test(testName = "Test Script 05: Create an account", alwaysRun = true)
+//	public void TC05_CreateAnAccount() {
+//		Random randomGenerator = new Random();  
+//		int randomInt = randomGenerator.nextInt(1000);  
+//		String email =   "username"+ randomInt +"@yopmail.com";
+//		String expectedMessage = "Thank you for registering with Main Website Store.";
+//		driver.findElement(By.xpath("//div[@class = 'footer-container']//a[text() = 'My Account']")).click();
+//		driver.findElement(By.xpath("//*[@id='login-form']//a[@title = 'Create an Account']")).click();
+//		driver.findElement(By.id("firstname")).sendKeys("user");
+//		driver.findElement(By.id("lastname")).sendKeys("name");
+//		driver.findElement(By.id("email_address")).sendKeys(email);
+//		driver.findElement(By.id("password")).sendKeys("123456");
+//		driver.findElement(By.id("confirmation")).sendKeys("123456");
+//		driver.findElement(By.xpath("//button[@title='Register']")).click();
+//		String successMessage = driver.findElement(By.className("success-msg")).getText();
+//		Assert.assertEquals(successMessage, expectedMessage);
+//		driver.findElement(By.xpath("//*[@id = 'header']//span[text() = 'Account']")).click();
+//		driver.findElement(By.xpath("//a[@title='Log Out']")).click();
+//		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+///*		String homePageTitle = driver.getTitle();
+//		Assert.assertEquals(homePageTitle, "Magento Commerce");*/
+//	}
 
 	@BeforeMethod(alwaysRun = true)
 	public void setUp() {
-		System.setProperty("webdriver.chrome.driver", "./lib/chromedriver");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-		//driver = new FirefoxDriver();
-		driver = new ChromeDriver(options);
+		/*System.setProperty("webdriver.chrome.driver", ".\\lib\\chromedriver.exe");
+        ChromeOptions options = new ChromeOptions();*/
+        //options.addArguments("--headless");
+		driver = new FirefoxDriver();
+		//driver = new ChromeDriver(options);
 		driver.get("http://live.guru99.com");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
