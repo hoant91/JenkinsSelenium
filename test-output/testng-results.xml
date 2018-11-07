@@ -2,64 +2,64 @@
 <testng-results skipped="0" failed="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="47428" started-at="2018-11-07T02:44:34Z" finished-at="2018-11-07T02:45:21Z">
+  <suite name="Suite" duration-ms="32297" started-at="2018-11-07T02:57:59Z" finished-at="2018-11-07T02:58:31Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="47428" started-at="2018-11-07T02:44:34Z" finished-at="2018-11-07T02:45:21Z">
+    <test name="Test" duration-ms="32297" started-at="2018-11-07T02:57:59Z" finished-at="2018-11-07T02:58:31Z">
       <class name="selenium_api.Topic_02_Exercise">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="setUp" is-config="true" duration-ms="8688" started-at="2018-11-07T09:44:34Z" finished-at="2018-11-07T09:44:42Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="setUp" is-config="true" duration-ms="5292" started-at="2018-11-07T09:57:59Z" finished-at="2018-11-07T09:58:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC01_VerifyUrlAndTitle()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="TC01_VerifyUrlAndTitle" duration-ms="2126" started-at="2018-11-07T09:44:42Z" finished-at="2018-11-07T09:44:44Z">
+        <test-method status="PASS" signature="TC01_VerifyUrlAndTitle()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="TC01_VerifyUrlAndTitle" duration-ms="2075" started-at="2018-11-07T09:58:04Z" finished-at="2018-11-07T09:58:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_VerifyUrlAndTitle -->
-        <test-method status="PASS" signature="teaDown()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="teaDown" is-config="true" duration-ms="197" started-at="2018-11-07T09:44:45Z" finished-at="2018-11-07T09:44:45Z">
+        <test-method status="PASS" signature="teaDown()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="teaDown" is-config="true" duration-ms="181" started-at="2018-11-07T09:58:07Z" finished-at="2018-11-07T09:58:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teaDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="setUp" is-config="true" duration-ms="8267" started-at="2018-11-07T09:44:45Z" finished-at="2018-11-07T09:44:53Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="setUp" is-config="true" duration-ms="5074" started-at="2018-11-07T09:58:07Z" finished-at="2018-11-07T09:58:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC02_LoginEmpty()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="TC02_LoginEmpty" duration-ms="994" started-at="2018-11-07T09:44:53Z" finished-at="2018-11-07T09:44:54Z">
+        <test-method status="PASS" signature="TC02_LoginEmpty()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="TC02_LoginEmpty" duration-ms="1522" started-at="2018-11-07T09:58:12Z" finished-at="2018-11-07T09:58:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC02_LoginEmpty -->
-        <test-method status="PASS" signature="teaDown()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="teaDown" is-config="true" duration-ms="70" started-at="2018-11-07T09:44:54Z" finished-at="2018-11-07T09:44:54Z">
+        <test-method status="PASS" signature="teaDown()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="teaDown" is-config="true" duration-ms="326" started-at="2018-11-07T09:58:13Z" finished-at="2018-11-07T09:58:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teaDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="setUp" is-config="true" duration-ms="6282" started-at="2018-11-07T09:44:54Z" finished-at="2018-11-07T09:45:01Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="setUp" is-config="true" duration-ms="3773" started-at="2018-11-07T09:58:14Z" finished-at="2018-11-07T09:58:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC03_LoginWithInvalidEmail()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="TC03_LoginWithInvalidEmail" duration-ms="1575" started-at="2018-11-07T09:45:01Z" finished-at="2018-11-07T09:45:02Z">
+        <test-method status="PASS" signature="TC03_LoginWithInvalidEmail()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="TC03_LoginWithInvalidEmail" duration-ms="1010" started-at="2018-11-07T09:58:17Z" finished-at="2018-11-07T09:58:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC03_LoginWithInvalidEmail -->
-        <test-method status="PASS" signature="teaDown()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="teaDown" is-config="true" duration-ms="66" started-at="2018-11-07T09:45:02Z" finished-at="2018-11-07T09:45:02Z">
+        <test-method status="PASS" signature="teaDown()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="teaDown" is-config="true" duration-ms="131" started-at="2018-11-07T09:58:18Z" finished-at="2018-11-07T09:58:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teaDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="setUp" is-config="true" duration-ms="6621" started-at="2018-11-07T09:45:02Z" finished-at="2018-11-07T09:45:09Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="setUp" is-config="true" duration-ms="4040" started-at="2018-11-07T09:58:19Z" finished-at="2018-11-07T09:58:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC04_LoginWithIncorrectPassword()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="TC04_LoginWithIncorrectPassword" duration-ms="1715" started-at="2018-11-07T09:45:09Z" finished-at="2018-11-07T09:45:11Z">
+        <test-method status="PASS" signature="TC04_LoginWithIncorrectPassword()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="TC04_LoginWithIncorrectPassword" duration-ms="1029" started-at="2018-11-07T09:58:23Z" finished-at="2018-11-07T09:58:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC04_LoginWithIncorrectPassword -->
-        <test-method status="PASS" signature="teaDown()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="teaDown" is-config="true" duration-ms="71" started-at="2018-11-07T09:45:11Z" finished-at="2018-11-07T09:45:11Z">
+        <test-method status="PASS" signature="teaDown()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="teaDown" is-config="true" duration-ms="174" started-at="2018-11-07T09:58:24Z" finished-at="2018-11-07T09:58:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teaDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="setUp" is-config="true" duration-ms="6401" started-at="2018-11-07T09:45:11Z" finished-at="2018-11-07T09:45:17Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="setUp" is-config="true" duration-ms="3940" started-at="2018-11-07T09:58:24Z" finished-at="2018-11-07T09:58:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="TC05_CreateAnAccount()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="TC05_CreateAnAccount" duration-ms="3978" started-at="2018-11-07T09:45:17Z" finished-at="2018-11-07T09:45:21Z">
+        <test-method status="FAIL" signature="TC05_CreateAnAccount()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="TC05_CreateAnAccount" duration-ms="3592" started-at="2018-11-07T09:58:28Z" finished-at="2018-11-07T09:58:31Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Magento Commerce] but found [Home page]]]>
@@ -71,7 +71,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:125)
 	at org.testng.Assert.assertEquals(Assert.java:178)
 	at org.testng.Assert.assertEquals(Assert.java:188)
-	at selenium_api.Topic_02_Exercise.TC05_CreateAnAccount(Topic_02_Exercise.java:87)
+	at selenium_api.Topic_02_Exercise.TC05_CreateAnAccount(Topic_02_Exercise.java:88)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -101,7 +101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC05_CreateAnAccount -->
-        <test-method status="PASS" signature="teaDown()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="teaDown" is-config="true" duration-ms="70" started-at="2018-11-07T09:45:21Z" finished-at="2018-11-07T09:45:21Z">
+        <test-method status="PASS" signature="teaDown()[pri:0, instance:selenium_api.Topic_02_Exercise@ba4d54]" name="teaDown" is-config="true" duration-ms="130" started-at="2018-11-07T09:58:31Z" finished-at="2018-11-07T09:58:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teaDown -->
