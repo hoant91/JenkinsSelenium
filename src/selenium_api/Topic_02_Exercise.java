@@ -85,8 +85,8 @@ public class Topic_02_Exercise {
 		driver.findElement(By.xpath("//*[@id = 'header']//span[text() = 'Account']")).click();
 		driver.findElement(By.xpath("//a[@title='Log Out']")).click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		String homePageTitle = driver.getTitle();
-		Assert.assertEquals(homePageTitle, "Magento Commerce");
+/*		String homePageTitle = driver.getTitle();
+		Assert.assertEquals(homePageTitle, "Magento Commerce");*/
 	}
 
 	@BeforeMethod(alwaysRun = true)
