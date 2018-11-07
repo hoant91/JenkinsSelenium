@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -17,7 +18,7 @@ import org.testng.annotations.Test;
 public class Topic_02_Exercise {
 	WebDriver driver;
 
-	@Test(testName = "Test Script 01: Verify URL and title")
+	@Test(priority = 1,alwaysRun = true)
 	public void TC01_VerifyUrlAndTitle() {
 		String homePageTitle = driver.getTitle();
 		Assert.assertEquals("Home page", homePageTitle);
@@ -31,7 +32,7 @@ public class Topic_02_Exercise {
 		Assert.assertEquals(createAccountPageUrl, "http://live.guru99.com/index.php/customer/account/create/");
 	}
 
-	@Test(testName = "Test Script 02: Login empty")
+	@Test(testName = "Test Script 02: Login empty",alwaysRun = true)
 	public void TC02_LoginEmpty() {
 		String expectedMessage = "This is a required field.";
 		driver.findElement(By.xpath("//div[@class = 'footer-container']//a[text() = 'My Account']")).click();
@@ -44,7 +45,7 @@ public class Topic_02_Exercise {
 		Assert.assertEquals(passValidation, expectedMessage);
 	}
 	
-	@Test(testName = "Test Script 03: Login with Email invalid")
+	@Test(testName = "Test Script 03: Login with Email invalid", alwaysRun = true)
 	public void TC03_LoginWithInvalidEmail() {
 		String expectedMessage = "Please enter a valid email address. For example johndoe@domain.com.";
 		driver.findElement(By.xpath("//div[@class = 'footer-container']//a[text() = 'My Account']")).click();
@@ -65,7 +66,7 @@ public class Topic_02_Exercise {
 		Assert.assertEquals(errMessage, expectedMessage);	
 	}
 	
-	@Test(testName = "Test Script 05: Create an account")
+	@Test(testName = "Test Script 05: Create an account", alwaysRun = true)
 	public void TC05_CreateAnAccount() {
 		Random randomGenerator = new Random();  
 		int randomInt = randomGenerator.nextInt(1000);  
@@ -88,16 +89,19 @@ public class Topic_02_Exercise {
 		Assert.assertEquals("Home page", homePageTitle);
 	}
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", "./lib/chromedriver");
-		driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+		//driver = new FirefoxDriver();
+		driver = new ChromeDriver(options);
 		driver.get("http://live.guru99.com");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void teaDown() {
 		driver.close();
 		driver.quit();
