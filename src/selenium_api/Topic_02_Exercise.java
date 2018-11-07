@@ -57,7 +57,7 @@ public class Topic_02_Exercise {
 	
 	@Test(testName = "Test Script 04: Login with Password incorrect")
 	public void TC04_LoginWithIncorrectPassword() {
-		String expectedMessage = "Please enter 3 or more characters without leading or trailing spaces.";
+		String expectedMessage = "Please enter 6 or more characters without leading or trailing spaces.";
 		driver.findElement(By.xpath("//div[@class = 'footer-container']//a[text() = 'My Account']")).click();
 		driver.findElement(By.id("email")).sendKeys("automation@gmail.com");
 		driver.findElement(By.id("pass")).sendKeys("123");
